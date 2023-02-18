@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genious Assignment-5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <div>
+                    <a class="navbar-brand" href="#">Interactive</a>
+                    <p>Geometry Genious</p>
+                </div>
+                <div>
+                    <button id="new-page" class="btn btn-success" type="submit">Blog</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="my-5 container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                                        <!-- cart tringle  -->
+                        <div class="col text-center">
+                            <div class="card h-100" id="card-tringle">
+                                <img src="images/triangle.png" class="h-75 w-75 mx-auto my-4" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Triangle</h5>
+                                    <p class="my-2">Area (A) = 0.5 &times; b &times; h</p>
+                                    <div class="d-flex justify-content-center gap-2">
+                                        <input id="tringle-base" class="w-25 my-2" type="text" placeholder="B">
+                                        <p class="my-auto">cm</p>
+                                        <input id="tringle-hight" class="w-25 my-2" type="text" placeholder="H">
+                                        <p class="my-auto">cm</p>
+                                    </div>
+                                    <button id="btn-tringle" class="btn btn-success mt-4">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                                        <!-- cart rectangle -->
+                        <div class="col text-center">
+                            <div class="card h-100" id="card-rectangle">
+                                <img src="images/rectangle.png" class="h-75 w-75 mx-auto my-4" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rectangle</h5>
+                                    <p class="my-2">Area (A) = w &times; I </p>
+                                    <div class="d-flex justify-content-center gap-2">
+                                        <input id="rectangle-width" class="w-25 my-2" type="text" placeholder="W">
+                                        <p class="my-auto">cm</p>
+                                        <input id="rectangle-length" class="w-25 my-2" type="text" placeholder="I">
+                                        <p class="my-auto">cm</p>
+                                    </div>
+                                    <button id="btn-rectangle" class="btn btn-success mt-4">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                                            <!-- parallelogram car -->
+                        <div class="col text-center">
+                            <div class="card h-100" id="card-parallelogram">
+                                <img src="images/parallelogram.png" class="h-75 w-100 mx-auto my-4" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Parallelogram</h5>
+                                    <p class="my-2">Area (A) = b &times; h</p>
+                                    <p class="mt-2 mb-4">b=10cm, h=12cm</p>                                  
+                                    <button id="btn-parallelogram" class="btn btn-success mt-4">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                                            <!-- rhombus cart section -->
+                        <div class="col text-center">
+                            <div class="card h-100" id="card-rhombus">
+                                <img src="images/rhombus.png" class="h-75 w-75 mx-auto my-4" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rhombus</h5>
+                                    <p class="my-2">Area (A) = 0.5 &times; d <sub>1</sub> &times; d <sub>2</sub></p>
+                                    <p class="mt-2 mb-4">d <sub>1</sub> = 16cm, d <sub>2</sub> = 8cm</p>       
+                                    <button id="btn-rhombus" class="btn btn-success mt-4">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                                        <!-- cart pentagon sec  -->
+                        <div class="col text-center">
+                            <div class="card h-100" id="card-pentagon">
+                                <img src="images/pentagon.png" class="h-75 w-75 mx-auto my-4" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pentagon</h5>
+                                    <p class="my-2">Area (A) = 0.5 &times; p &times; h</p>
+                                    <p class="mt-2 mb-4">p = 6cm, b = 10cm</p>  
+                                    <button id="btn-pentagon" class="btn btn-success mt-4">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                                    <!-- cart ellipse sections  -->
+                        <div class="col text-center">
+                            <div class="card h-100"  id="card-ellipse">
+                                <img src="images/ellipse.png" class="h-75 w-75 mx-auto my-4" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ellipse</h5>
+                                    <p class="my-2">Area (A) = 	&#x3C0;ab</p>
+                                    <p class="mt-2 mb-4">a = 10cm, b = 4cm</p>  
+                                    <button id="btn-ellipse" class="btn btn-success mt-4">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <!-- ------------------------ Calculations sections-------------------------------------- -->
+                <div class="col-4 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="text-decoration-underline">Area Calculations</h6>
+                            <div class="text-start d-flex justify-content-between align-items-baseline bg-light mt-4">
+                                <h6 class="color-red px-2">1. Triangle: <span id="tringle-result">00</span>cm<sup>2</sup></h6>
+                                <button class="btn btn-success">convert</button>
+                            </div>
+                            <div class="text-start d-flex justify-content-between align-items-baseline bg-light mt-4">
+                                <h6 class="color-red px-2">2. Rectangle: <span id="rectangle-result">00</span>cm<sup>2</sup></h6>
+                                <button class="btn btn-success">convert</button>
+                            </div>
+                            <div class="text-start d-flex justify-content-between align-items-baseline bg-light bg-light mt-4">
+                                <h6 class="color-red px-2">3. Parallelogram: <span id="parallelogram-result">00</span>cm<sup>2</sup></h6>
+                                <button class="btn btn-success">convert</button>
+                            </div>
+                            <div class="text-start d-flex justify-content-between align-items-baseline bg-light mt-4">
+                                <h6 class="color-red px-2">4. Rhombus: <span id="rhombus-result">00</span>cm<sup>2</sup></h6>
+                                <button class="btn btn-success">convert</button>
+                            </div>
+                            <div class="text-start d-flex justify-content-between align-items-baseline bg-light bg-light mt-4">
+                                <h6 class="color-red px-2">5. Pentagon: <span id="pentagon-result">00</span>cm<sup>2</sup></h6>
+                                <button class="btn btn-success">convert</button>
+                            </div>
+                            <div class="text-start d-flex justify-content-between align-items-baseline bg-light mt-4">
+                                <h6 class="color-red px-2">6. Ellipse: <span id="ellipse-result">00</span>cm<sup>2</sup></h6>
+                                <button class="btn btn-success">convert</button>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+<script src="js/hover.js"></script>
+<script src="js/tringle.js"></script>
+<script src="js/rectangle.js"></script>
+<script src="js/parallelogram.js"></script>
+<script src="js/rhombos.js"></script>
+<script src="js/pentagon.js"></script>
+<script src="js/ellipse.js"></script>
+
+</body>
+
+</html>
